@@ -15,6 +15,7 @@
     });
 
     window.onload = function () {
+        pQuestion.innerText = "加载中...";
         fetch('./words.json', {
             method: 'GET'
         }).then(function (response) {
