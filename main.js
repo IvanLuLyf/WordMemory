@@ -16,6 +16,7 @@
 
     window.onload = function () {
         pQuestion.innerText = "加载中...";
+        loadRecord();
         fetch('./words.json', {
             method: 'GET'
         }).then(function (response) {
@@ -29,6 +30,13 @@
 
         });
     };
+
+    function loadRecord() {
+        let record = JSON.parse(localStorage.getItem('record')) || {score: 0, times: 0};
+        score = record.score;
+        times = record.times;
+        pScore.innerText = "分数: " + score + "/" + times + (times > 0 ? ",   正确率: " + (score / times * 100).toFixed(2) + "%" : '');
+    }
 
     function loadQuestion() {
         let start = randomFrom(0, words.length - 6);
@@ -63,6 +71,7 @@
                         loadQuestion();
                     }
                     pScore.innerText = "分数: " + score + "/" + times + ",   正确率: " + (score / times * 100).toFixed(2) + "%";
+                    localStorage.setItem('record', JSON.stringify({score: score, times: times}));
                 }
             });
             divWordList.appendChild(p);
