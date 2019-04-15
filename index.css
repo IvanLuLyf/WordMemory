@@ -1,0 +1,15 @@
+.word-item {
+    background-color: #eafff4;
+    border: 1px solid #e3ffff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.btn-next{
+    background-color: #ffc4ce;
+    border: 1px solid #ffb8a7;
+    border-radius: 5px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+}
