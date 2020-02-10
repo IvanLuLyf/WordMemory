@@ -63,7 +63,7 @@
             let word = qWords[i][1];
             let btn = document.createElement('button');
             btn.innerText = word;
-            btn.classList.add('bcu', 'btn', 'block','outline', 'md', 'mint');
+            btn.classList.add('bcu', 'btn', 'block', 'outline', 'md', 'mint', 'word-item');
             btn.addEventListener('click', e => {
                 if (shouldGoNext) {
                     shouldGoNext = false;

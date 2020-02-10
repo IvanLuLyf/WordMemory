@@ -10,3 +10,8 @@
 .bcu.btn + .bcu.btn {
     margin-top: 0.5rem;
 }
+
+.word-item {
+    white-space: normal!important;
+    text-align: left!important;
+}
