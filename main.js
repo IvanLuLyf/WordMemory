@@ -10,6 +10,20 @@
     let score = 0;
     let times = 0;
 
+    if ('serviceWorker' in navigator) {
+        let sw = '/sw.js';
+        let scope = '/';
+        if (location.href.indexOf('/WordMem/') !== -1) {
+            sw = '/WordMem/sw.js';
+            scope = '/WordMem/';
+        }
+        navigator.serviceWorker.register(sw, {scope: scope}).then(res => {
+            console.log('ServiceWorker Init');
+        }).catch(err => {
+            console.log('ServiceWorker Failed')
+        })
+    }
+
     document.getElementById('btn_next').addEventListener('click', _ => {
         loadQuestion()
     });
