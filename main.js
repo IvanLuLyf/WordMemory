@@ -47,10 +47,10 @@
         pStatus.innerText = "";
         for (let i = 0; i < qWords.length; i++) {
             let word = qWords[i][1];
-            let p = document.createElement('p');
-            p.innerText = word;
-            p.classList.add('word-item');
-            p.addEventListener('click', e => {
+            let btn = document.createElement('button');
+            btn.innerText = word;
+            btn.classList.add('bcu', 'btn', 'block','outline', 'md', 'mint');
+            btn.addEventListener('click', e => {
                 if (shouldGoNext) {
                     shouldGoNext = false;
                     loadQuestion();
@@ -74,7 +74,7 @@
                     localStorage.setItem('record', JSON.stringify({score: score, times: times}));
                 }
             });
-            divWordList.appendChild(p);
+            divWordList.appendChild(btn);
         }
     }
 
