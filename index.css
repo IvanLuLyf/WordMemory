@@ -7,11 +7,6 @@
     bottom: 25px;
 }
 
-.bcu.btn.block {
-    display: block;
-    width: 100%;
-}
-
 .bcu.btn + .bcu.btn {
     margin-top: 0.5rem;
 }

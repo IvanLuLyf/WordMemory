@@ -1,4 +1,4 @@
-const CATCH_VER = 'v1';
+const CATCH_VER = 'v2';
 self.addEventListener('install', function (event) {
     let baseDir = '/';
     if (location.href.indexOf('/WordMem/') !== -1) {
