@@ -37,4 +37,4 @@ SOFTWARE.
 
 ## Try
 
-体验地址[点这里](https://ivanlulyf.github.io/WordMemory/index.html)
+[Live Demo](https://ivanlulyf.github.io/WordMemory/index.html)
