@@ -2,7 +2,7 @@
 
 一个背单词的网页
 
-a web page for remember English words
+a web page for word reciting
 
 ![GitHub](https://img.shields.io/github/license/ivanlulyf/wordmemory.svg?color=blue&style=flat-square)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IvanLuLyf/WordMemory?style=flat-square)
